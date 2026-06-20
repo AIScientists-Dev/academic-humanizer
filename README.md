@@ -40,18 +40,15 @@ claim↔evidence matching → voice/venue calibration. The audit→rewrite loop 
 
 ## Acknowledgments
 
-This skill builds on and complements two excellent projects. Each has a different focus:
-
 - **[blader/humanizer](https://github.com/blader/humanizer)** (MIT) — *focus:* removing general
-  AI-writing patterns for blog, casual, and encyclopedic text. We reuse its general AI-tell catalog
-  (Layer 1).
-- **[koaeraser/ARMS](https://github.com/koaeraser/ARMS)** — *focus:* a full autonomous pipeline from a
-  research idea to a polished, adversarially revised manuscript. We adopt its claim-evidence and
-  numerical-precision standards (ranges over point estimates; attribute every number to its method,
-  metric, and baseline).
-- **Academic Humanizer** (this repo) — *focus:* a single-purpose **editing pass** that de-AI-ifies
-  existing academic prose and enforces claim↔evidence while preserving scholarly voice. Narrower than
-  ARMS, more academic than a general humanizer. Layers 2–5 are original.
+  AI-writing patterns for blog, casual, and encyclopedic text. This skill reuses its general AI-tell
+  catalog (Layer 1) and extends it for academic prose.
+- **[koaeraser/ARMS](https://github.com/koaeraser/ARMS)** — *focus:* an autonomous pipeline for
+  statistics/methodology research papers (idea → validated, revised manuscript). A complementary,
+  broader-scope project that informed the claim-evidence and numerical-precision emphasis here.
+
+This skill is the narrower piece of that landscape: a single-purpose **editing pass** that de-AI-ifies
+existing academic prose and matches claims to evidence while preserving scholarly voice.
 
 ## License
 
