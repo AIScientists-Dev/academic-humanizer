@@ -1,0 +1,18 @@
+MIT License
+
+Copyright (c) 2026 Jie Ding
+
+This work is a derivative of "humanizer" by blader (https://github.com/blader/humanizer),
+MIT License, and incorporates concepts from Wikipedia's "Signs of AI writing"
+(WikiProject AI Cleanup), available under CC BY-SA. The academic-specific layer is original.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+and associated documentation files (the "Software"), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
