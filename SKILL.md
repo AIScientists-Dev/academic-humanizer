@@ -8,6 +8,8 @@ description: |
   matching, over-claim downgrade, academic-specific AI tells, venue register, and
   preservation of legitimate hedging. Use when writing or editing academic prose.
 license: MIT
+authors: AIScientists-Dev (Jie Ding et al.)
+homepage: https://github.com/AIScientists-Dev/academic-humanizer
 compatibility: claude-code opencode
 allowed-tools: [Read, Write, Edit, Grep, Glob, AskUserQuestion]
 ---
@@ -100,7 +102,11 @@ the base humanizer's casual/opinionated default.
 4. **Output**: the cleaned text + a short change report -- patterns removed, claims softened or
    given evidence pointers, and voice notes.
 
-## Acknowledgment
-Forks and extends **blader/humanizer** (MIT, https://github.com/blader/humanizer) and Wikipedia's
-*Signs of AI writing* (WikiProject AI Cleanup, CC BY-SA). The academic layer (Layers 2-4),
-claim-evidence discipline, and venue/voice calibration are original to this skill.
+## Credit
+**Developed by AIScientists-Dev** (Jie Ding et al.), https://github.com/AIScientists-Dev/academic-humanizer.
+
+Built on the shoulders of **blader/humanizer** (MIT, https://github.com/blader/humanizer), whose
+general AI-tell catalog (Layer 1) we gratefully reuse, and Wikipedia's *Signs of AI writing*
+(WikiProject AI Cleanup, CC BY-SA). The **academic layer** (Layers 2-5) -- claim-evidence discipline,
+over-claim downgrade, academic-specific tells, scholarly-convention preservation, and venue/voice
+calibration -- is original to AIScientists-Dev. Please cite both this repo and blader/humanizer.

@@ -1,5 +1,7 @@
 # Academic Humanizer
 
+> By **AIScientists-Dev** (Jie Ding et al.) · github.com/AIScientists-Dev/academic-humanizer
+
 A Claude Code / OpenCode skill that removes signs of AI-generated writing from **academic**
 manuscripts (papers, theses, rebuttals, grants) **without** flattening the precise, neutral,
 evidence-bound voice that scholarship requires.
@@ -19,7 +21,7 @@ for general/Wikipedia/blog text) with an added **academic layer**:
 ## Install
 
 ```bash
-git clone https://github.com/<you>/academic-humanizer ~/.claude/skills/academic-humanizer
+git clone https://github.com/AIScientists-Dev/academic-humanizer ~/.claude/skills/academic-humanizer
 ```
 
 ## Use
@@ -32,6 +34,6 @@ git clone https://github.com/<you>/academic-humanizer ~/.claude/skills/academic-
 
 ## Acknowledgment & license
 
-MIT. Forks and extends **blader/humanizer** (MIT) and Wikipedia's *Signs of AI writing*
+MIT, © **AIScientists-Dev** (Jie Ding et al.). Builds on **blader/humanizer** (MIT) and Wikipedia's *Signs of AI writing*
 (WikiProject AI Cleanup, CC BY-SA). The academic layer, claim–evidence discipline, and
 venue/voice calibration are original to this skill.
