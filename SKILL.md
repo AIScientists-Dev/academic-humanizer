@@ -2,14 +2,10 @@
 name: academic-humanizer
 version: 0.1.0
 description: |
-  Remove AI-generated writing patterns from ACADEMIC manuscripts (papers, theses,
-  rebuttals, grant proposals) while preserving scholarly conventions and matching the
-  author's voice. Forked from blader/humanizer; adds an academic layer: claim-evidence
-  matching, over-claim downgrade, academic-specific AI tells, venue register, and
-  preservation of legitimate hedging. Use when writing or editing academic prose.
+  Remove AI-generated writing patterns from academic manuscripts (papers, theses, rebuttals,
+  grants) while preserving scholarly conventions, matching claims to evidence, and matching the
+  author's voice. Use when writing or editing academic prose.
 license: MIT
-authors: AIScientists-Dev (Jie Ding et al.)
-homepage: https://github.com/AIScientists-Dev/academic-humanizer
 compatibility: claude-code opencode
 allowed-tools: [Read, Write, Edit, Grep, Glob, AskUserQuestion]
 ---
@@ -32,7 +28,7 @@ Academic writing already has a correct human voice: **neutral, precise, third-pe
 casualizing or injecting opinion, AND to enforce the discipline a general humanizer misses:
 **every claim earns its number, figure, or citation, and no verb is stronger than its evidence.**
 
-## Layer 1 -- General AI-tell catalog (inherited from blader/humanizer)
+## Layer 1 -- General AI-tell catalog
 Apply these, subject to the academic exceptions in Layer 3:
 - Inflated significance / legacy puffery ("marking a pivotal moment", "underscores its importance").
 - Superficial "-ing" tails that fake depth ("..., highlighting...", "..., reflecting...").
@@ -101,19 +97,3 @@ the base humanizer's casual/opinionated default.
    over-claims matched to evidence, hedging preserved where warranted (Layer 3).
 4. **Output**: the cleaned text + a short change report -- patterns removed, claims softened or
    given evidence pointers, and voice notes.
-
-## Credit
-**Developed by AIScientists-Dev** (Jie Ding et al.), https://github.com/AIScientists-Dev/academic-humanizer.
-
-Built on the shoulders of **blader/humanizer** (MIT, https://github.com/blader/humanizer), whose
-general AI-tell catalog (Layer 1) we gratefully reuse, and Wikipedia's *Signs of AI writing*
-(WikiProject AI Cleanup, CC BY-SA). The **academic layer** (Layers 2-5) -- claim-evidence discipline,
-over-claim downgrade, academic-specific tells, scholarly-convention preservation, and venue/voice
-calibration -- is original to AIScientists-Dev.
-
-We also drew on the **claim-evidence and numerical-precision standards** (prefer ranges over point
-estimates; attribute every number to its method, metric, and baseline; match verb strength to evidence)
-from **koaeraser/ARMS** (https://github.com/koaeraser/ARMS), an autonomous research-manuscript *pipeline*.
-academic-humanizer has a deliberately **different, narrower focus**: a single-purpose de-AI-ification and
-claim-evidence *editing pass* over existing prose, not an end-to-end idea-to-manuscript pipeline. The two
-are complementary. Please cite this repo, blader/humanizer, and ARMS where relevant.
