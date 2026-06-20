@@ -109,4 +109,11 @@ Built on the shoulders of **blader/humanizer** (MIT, https://github.com/blader/h
 general AI-tell catalog (Layer 1) we gratefully reuse, and Wikipedia's *Signs of AI writing*
 (WikiProject AI Cleanup, CC BY-SA). The **academic layer** (Layers 2-5) -- claim-evidence discipline,
 over-claim downgrade, academic-specific tells, scholarly-convention preservation, and venue/voice
-calibration -- is original to AIScientists-Dev. Please cite both this repo and blader/humanizer.
+calibration -- is original to AIScientists-Dev.
+
+We also drew on the **claim-evidence and numerical-precision standards** (prefer ranges over point
+estimates; attribute every number to its method, metric, and baseline; match verb strength to evidence)
+from **koaeraser/ARMS** (https://github.com/koaeraser/ARMS), an autonomous research-manuscript *pipeline*.
+academic-humanizer has a deliberately **different, narrower focus**: a single-purpose de-AI-ification and
+claim-evidence *editing pass* over existing prose, not an end-to-end idea-to-manuscript pipeline. The two
+are complementary. Please cite this repo, blader/humanizer, and ARMS where relevant.

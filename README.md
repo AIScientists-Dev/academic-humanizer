@@ -34,6 +34,6 @@ git clone https://github.com/AIScientists-Dev/academic-humanizer ~/.claude/skill
 
 ## Acknowledgment & license
 
-MIT, © **AIScientists-Dev** (Jie Ding et al.). Builds on **blader/humanizer** (MIT) and Wikipedia's *Signs of AI writing*
+MIT, © **AIScientists-Dev** (Jie Ding et al.). Builds on **blader/humanizer** (general AI-tell catalog) and draws claim-evidence/numerical-precision standards from **koaeraser/ARMS** (a full manuscript pipeline; this skill has a narrower editing focus) (MIT) and Wikipedia's *Signs of AI writing*
 (WikiProject AI Cleanup, CC BY-SA). The academic layer, claim–evidence discipline, and
 venue/voice calibration are original to this skill.
