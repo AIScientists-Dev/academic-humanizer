@@ -75,8 +75,8 @@ Empirical work *shows* and *provides evidence*; it does not *prove* or *demonstr
 new avenues, sheds light on, of paramount importance, bridges the gap.
 **Before:** *This work paves the way for a new paradigm and sheds light on a problem of paramount
 importance.*
-**After:** *This work addresses one failure mode of prior methods: catastrophic forgetting under
-sequential composition (Section 4).*
+**After:** *This work addresses one failure mode of prior methods: error accumulation under long-horizon
+rollout (Section 4).*
 
 ### 2.3 Empty intensifiers
 **Watch:** extensive/comprehensive/thorough experiments, a wide range of, numerous, various.
@@ -86,33 +86,33 @@ sequential composition (Section 4).*
 ### 2.4 Novelty padding
 **Watch:** "novel" used more than once per section; "to the best of our knowledge"; "for the first time".
 **Before:** *We propose a novel framework and, to the best of our knowledge, are the first to study this.*
-**After:** *We study composition of independently-trained memory modules, which prior memory-layer work
-(trained jointly) does not address.*
+**After:** *We study online calibration under delayed labels, which prior calibration work (offline) does
+not address.*
 
 ### 2.5 Formulaic openers
 **Watch:** "In recent years, X has attracted increasing attention"; "With the rapid development of...";
 "Despite recent advances,...".
-**Before:** *In recent years, parametric memory has attracted increasing attention.*
-**After:** *Parametric memory has a structural limitation: existing banks are trained jointly with the
-model and cannot be added without retraining.*
+**Before:** *In recent years, tabular deep learning has attracted increasing attention.*
+**After:** *Tabular deep learning has a structural limitation: most models discard feature-type metadata
+and must relearn it from data.*
 
 ### 2.6 Connective overuse
 Do not start consecutive sentences with Moreover/Furthermore/Additionally/In particular; let logic carry.
 **Before:** *Moreover, the method is fast. Furthermore, it is simple. Additionally, it scales.*
-**After:** *The method is fast and simple, and it scales to 56k facts (Section 5).*
+**After:** *The method is fast and simple, and it scales to one million rows (Section 5).*
 
 ### 2.7 Contribution-list cliches
 Each contribution names a *specific* result, not a restatement of the abstract.
 **Before:** *Our contributions are: (1) a novel method; (2) extensive experiments; (3) strong results.*
-**After:** *We (1) introduce a concept-keyed capsule that reaches 78% held-out recall vs 11% for the
-frozen base; (2) show it is non-destructive where sequential LoRA forgets (95% -> 42%); (3) release the
-56k-fact benchmark.*
+**After:** *We (1) introduce a metadata-aware encoder that reaches 0.91 AUROC vs 0.86 for the strongest
+baseline; (2) show it stays within 2 points under 20% label noise where the baseline drops 9; (3) release
+the benchmark.*
 
 ### 2.8 Citation dumping
 Cite the one or two works that matter and say why, not a bracketed list.
 **Before:** *Many methods exist [3, 7, 9, 12, 15].*
-**After:** *The closest prior method is PKM [7], which trains a single memory jointly with the model;
-we instead compose independent modules.*
+**After:** *The closest prior method is TabNet [7], which encodes all features jointly; we instead
+condition on feature-type metadata.*
 
 ### 2.9 Hedging-by-vagueness
 **Watch:** somewhat, relatively, fairly, to some extent, quite. Quantify or cut.
@@ -150,10 +150,11 @@ and (b) does the verb match the strength of that evidence?
   *Before:* *Our method is more robust.*  *After:* *Our method's accuracy drops by 2 points under
   distribution shift, versus 11 points for the baseline (Figure 3).*
 - **Verb stronger than evidence -> downgrade.**
-  *Before:* *This demonstrates that capsules are universally superior.*
-  *After:* *On these three domains, the capsule matches or exceeds the baseline (Table 2).*
+  *Before:* *This demonstrates that our method is universally superior.*
+  *After:* *On these three datasets, our method matches or exceeds the strongest baseline (Table 2).*
 - **Vague magnitude -> a number or RANGE, attributed.**
-  *Before:* *a large improvement.*  *After:* *a 2--6% improvement in balanced accuracy over RAG.*
+  *Before:* *a large improvement.*  *After:* *a 2--6% improvement in balanced accuracy over the strongest
+  baseline.*
   Prefer ranges (e.g., "2--6%") over single averaged values unless the averaging method is stated, and
   attribute each number to its method, metric, and baseline. When comparing, lead with the comparison
   against the strongest competitor, not the trivial baseline.

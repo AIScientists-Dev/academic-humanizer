@@ -22,20 +22,20 @@ evidence-bound voice that scholarship requires.**
 > [!CAUTION]
 > **Before** — AI-generated, every tell present.
 >
-> In recent years, parametric memory has attracted increasing attention. In this paper, we propose a
-> novel method and demonstrate through extensive experiments that it significantly outperforms existing
-> approaches, paving the way for a new paradigm. To the best of our knowledge, this is the first work to
-> delve into this crucial problem.
+> In recent years, continual learning has attracted increasing attention and achieved remarkable
+> success. However, existing methods still face crucial challenges. In this proposal, we propose a novel
+> framework that leverages cutting-edge techniques to delve into these intricate problems, paving the way
+> for a transformative paradigm that will revolutionize the field.
 
 > [!TIP]
-> **After** — academic-humanized; claims tied to evidence, voice preserved.
+> **After** — academic-humanized; in proposal mode the vision stays, the tells go.
 >
-> Parametric memory has a structural limitation: prior banks are trained jointly with the model and
-> cannot be added without retraining. We introduce a detachable capsule and evaluate it on 56k curated
-> facts, where it raises held-out recall from 0.12–0.24 (bare) to 0.34–0.70 across three domains, and is
-> non-destructive where sequential LoRA forgets (95% → 42%).
+> Existing continual-learning methods, though promising, are largely empirical, with unclear principles
+> underpinning their behavior — which limits their reliability and further progress. This proposal
+> builds a principled framework that unifies adaptation, soft supervision, and cross-domain knowledge
+> through coupled theory and algorithm design, demonstrated on autonomous driving and network management.
 
-**More before/after passes** — a real paper abstract, an NIH Specific Aims page, and a funded NSF CAREER
+**More before/after passes** — a general example, an NIH Specific Aims page, and a funded NSF CAREER
 summary: [`examples/before-after.md`](examples/before-after.md).
 
 ---
