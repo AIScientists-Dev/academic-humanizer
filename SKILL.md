@@ -1,6 +1,6 @@
 ---
 name: academic-humanizer
-version: 0.3.0
+version: 0.3.1
 description: |
   Remove AI-generated writing patterns from academic manuscripts (papers, theses, rebuttals) and
   funding proposals (NSF Project Summary/Description, NIH Specific Aims) while preserving scholarly
@@ -18,12 +18,12 @@ evidence-bound voice that scholarship requires.
 
 ## When to use
 Editing or reviewing academic prose: paper sections, abstracts, rebuttals, related work, and **funding
-proposals** (NSF Project Summary/Description, NIH Specific Aims, fellowship and foundation proposals --
+proposals** (NSF Project Summary/Description, NIH Specific Aims, fellowship and foundation proposals;
 see Layer 6). **Not** for blogs, marketing, or personal essays, and **never** inject opinion, humor, or
-first-person "personality" into a manuscript -- for technical writing, neutral and precise *is* the human
-voice. One caveat for proposals: their register is different from a paper's -- they are sold on vision and
-feasibility, so the ambition language a paper would trim is appropriate there; apply Layer 6, not the
-paper layers' stricter trimming, to vision statements.
+first-person "personality" into a manuscript. For technical writing, neutral and precise *is* the human
+voice. One caveat for proposals: their register is different from a paper's, since they are sold on
+vision and feasibility, so the ambition language a paper would trim is appropriate there; apply Layer 6,
+not the paper layers' stricter trimming, to vision statements.
 
 ## Core principle
 Academic writing already has a correct human voice: neutral, precise, third-person plural ("we"), every
@@ -40,12 +40,12 @@ verb is stronger than its evidence.**
 3. **Rewrite**: same structure and content, all claims and citations preserved, tells removed, over-claims
    matched to evidence, legitimate hedging kept.
 4. **Report**: cleaned text plus a short change log (patterns removed, claims softened or given evidence
-   pointers, voice notes). Cover everything the original covered -- if it had five paragraphs, so does the
+   pointers, voice notes). Cover everything the original covered: if it had five paragraphs, so does the
    rewrite.
 
 ---
 
-## Layer 1 -- General AI-tell catalog
+## Layer 1: General AI-tell catalog
 Scan for and fix the general patterns, subject to the academic exceptions in Layer 3:
 inflated significance ("marking a pivotal moment"); superficial "-ing" tails that fake depth
 ("..., highlighting..."); promotional/figurative language ("rich", "vibrant", "groundbreaking");
@@ -53,7 +53,8 @@ vague attributions ("experts argue" with no cite); AI vocabulary (*delve, unders
 tapestry, testament, landscape (abstract), pivotal, showcase, foster, leverage (filler), realm,
 seamless*); copula avoidance ("serves as" -> "is"); negative parallelisms ("not just X, but Y");
 rule-of-three padding; elegant variation (cycling synonyms for one referent); filler
-("it is worth noting that", "in order to") and em-dash *overuse*.
+("it is worth noting that", "in order to"); and **em-dashes (remove entirely; recast with commas,
+colons, parentheses, or separate sentences)**.
 
 **Before:** *Additionally, an enduring testament to the method's value is its ability to delve into
 intricate dependencies, showcasing a seamless integration that underscores its pivotal role.*
@@ -61,7 +62,7 @@ intricate dependencies, showcasing a seamless integration that underscores its p
 
 ---
 
-## Layer 2 -- Academic AI tells (remove or fix)
+## Layer 2: Academic AI tells (remove or fix)
 
 ### 2.1 Over-claiming verbs
 Empirical work *shows* and *provides evidence*; it does not *prove* or *demonstrate* universal truths.
@@ -127,22 +128,23 @@ If it matters, the sentence shows it.
 
 ---
 
-## Layer 3 -- Preserve these (do NOT over-correct)
+## Layer 3: Preserve these (do NOT over-correct)
 A general humanizer flattens legitimate scholarly constructs. Keep them.
 
 - **Evidence-tied hedging is correct and required.** Keep "suggests", "is consistent with", "we
   hypothesize that", "may indicate", "appears to" when the claim is genuinely uncertain.
-  *Wrong fix:* turning *"the results suggest X"* into *"the results prove X"* -- this manufactures
+  *Wrong fix:* turning *"the results suggest X"* into *"the results prove X"*: this manufactures
   over-claiming. Keep the calibrated verb.
 - **Passive voice** is fine when the actor is irrelevant: *"Samples were normalized to total protein."*
 - **First-person plural "we"** is standard; do not rewrite to avoid it.
-- **Em-dashes, semicolons, an occasional triple** are fine in moderation; flag only *overuse*.
+- **Semicolons and an occasional triple** are fine in moderation. Em-dashes are the exception: remove
+  them entirely (Layer 1), recasting with commas, colons, parentheses, or separate sentences.
 - **Formal definitions, named methods/metrics, technical terms, equations, and symbols** stay verbatim.
 - **Never invent, drop, or alter a number, equation, or citation.** Same content; preserve every cite key.
 
 ---
 
-## Layer 4 -- Claim-evidence discipline
+## Layer 4: Claim-evidence discipline
 For every empirical claim, check (a) is it backed by a number, figure, table, or citation in the text,
 and (b) does the verb match the strength of that evidence?
 
@@ -161,58 +163,58 @@ and (b) does the verb match the strength of that evidence?
 
 ---
 
-## Layer 5 -- Voice and venue matching
+## Layer 5: Voice and venue matching
 If the author supplies prior papers, read a sample first and note sentence rhythm, connective habits,
-level and placement of hedging, how they open sections, notation, and recurring phrasings -- then match
+level and placement of hedging, how they open sections, notation, and recurring phrasings, then match
 them. Match the venue's register too (e.g., ICLR/NeurIPS: terse, direct, results-forward; Nature/PNAS:
-more expository). Absent a sample, default to clean, precise, venue-appropriate prose -- never the casual,
+more expository). Absent a sample, default to clean, precise, venue-appropriate prose, not the casual,
 opinionated voice of a general-purpose humanizer.
 
-## Layer 6 -- Funding-proposal mode (NSF, NIH)
+## Layer 6: Funding-proposal mode (NSF, NIH)
 A proposal is not a paper. It is sold on **vision plus feasibility**, not on finished results, and
 reviewers score it. The register shift matters: ambition language that the paper layers would trim
 ("long-term goal", "pioneer", "transformative", "establish a foundation") is *appropriate and expected*
-here -- provided a credible plan and evidence back it. So in proposal mode, **do not flatten the vision**;
+here, provided a credible plan and evidence back it. So in proposal mode, **do not flatten the vision**;
 enforce a different discipline instead: **claim <-> feasibility**.
 
 ### 6.1 Know the structure; the score lives in the first pages
 Reviewers form a score from the opening, then skim the rest to confirm it. Put most editing effort there.
-- **NSF.** A one-page **Project Summary** with the three review-criteria heads spelled out --
-  **Overview**, **Intellectual Merit**, **Broader Impacts** -- each self-contained. The Project
+- **NSF.** A one-page **Project Summary** with the three review-criteria heads spelled out:
+  **Overview**, **Intellectual Merit**, **Broader Impacts**, each self-contained. The Project
   Description then opens with **long-term vision -> this proposal's goal -> the gap -> the specific
   thrusts/aims -> the payoff**, ideally within the first 1--2 pages, with one overview figure. Broader
   Impacts must be substantive and integrated, never an afterthought.
 - **NIH (R01).** The **Specific Aims page is the whole proposal in one page**, and is the most-read,
-  most-decisive page. Standard arc: (1) opening -- the problem, what is known, the **gap / critical need**;
+  most-decisive page. Standard arc: (1) opening: the problem, what is known, the **gap / critical need**;
   (2) the **long-term goal** and the **central hypothesis** with its rationale; (3) "**The objective of
   this application is...**" plus how the hypothesis was formed; (4) **2--3 Aims**, each a one-line goal +
-  a phrase on approach + the expected outcome; (5) a **payoff** paragraph -- what changes if it succeeds.
+  a phrase on approach + the expected outcome; (5) a **payoff** paragraph: what changes if it succeeds.
   Then **Significance, Innovation, Approach** as separately scored sections.
 
 ### 6.2 First-3-pages primacy (edit these hardest)
 By the end of page 1 (NIH Aims) or pages ~2--3 (NSF), the reader must already hold: the **hook** (why it
 matters, concretely), the **gap** (what is missing and the cost of the gap), the **central idea** (your
 approach in one sentence), the **aims/thrusts** (crisp and parallel), and the **payoff**. If any is
-missing or buried, fix that before touching later sections -- a reviewer unconvinced by page 3 does not
+missing or buried, fix that before touching later sections. A reviewer unconvinced by page 3 does not
 recover on page 10.
 
-### 6.3 Proposal-specific weak moves -> fix
+### 6.3 Proposal-specific weak moves to fix
 - **Vague importance.** *Watch:* "this is an important/timely problem", "X has many applications".
   **Before:** *Understanding this problem is critically important.*
   **After:** *Without bounds on how measurement noise propagates to diagnosis, clinical models are tuned by
-  trial and error -- the inefficiency this proposal removes.*
+  trial and error, the inefficiency this proposal removes.*
 - **Method-as-aim** (an aim naming a technique instead of a question or outcome).
   **Before:** *Aim 2: Apply transfer learning to the dataset.*
   **After:** *Aim 2: Determine whether fusing wearable and lab signals improves early detection, and for
   which patient subgroups it helps or hurts.*
-- **Dominoed aims** (Aim 2/3 collapse if Aim 1 fails -- reviewers flag this as fragile). *Fix:* phrase
+- **Dominoed aims** (Aim 2/3 collapse if Aim 1 fails; reviewers flag this as fragile). *Fix:* phrase
   aims as **parallel and independently valuable**; where one depends on another, state the fallback.
 - **Ambition without feasibility.** Every bold claim needs a footing: preliminary data, a prior
   result/publication, a classical theorem you build on, or a collaborator/letter. *Fix:* attach the
   evidence beside the claim ("our preliminary result in Fig. X shows...", "building on a classical minimax
   lower bound...").
 - **Boilerplate Broader Impacts / training plan.** *Watch:* "we will mentor students and disseminate via
-  talks and papers." *Fix:* make it concrete, enumerated, and tied to the research -- specific programs,
+  talks and papers." *Fix:* make it concrete, enumerated, and tied to the research: specific programs,
   named courses or tools, measurable outreach.
 - **Hedged central hypothesis.** The Aims-page hypothesis is a falsifiable commitment, not "we will
   explore whether possibly...". Calibrated hedging belongs in the Approach's interpretation, not the
@@ -220,26 +222,26 @@ recover on page 10.
 
 ### 6.4 Preserve and deploy (funded-proposal craft)
 These read as strength; keep or add them rather than editing them out.
-- **Vision/ambition framing** -- a bold long-term goal up front, with this proposal as one principled step
+- **Vision/ambition framing**: a bold long-term goal up front, with this proposal as one principled step
   toward it.
-- **Run-in lead-ins for scannability** -- bold/italic **Goal:**, **Motivation:**, **Innovation:**,
+- **Run-in lead-ins for scannability**: bold/italic **Goal:**, **Motivation:**, **Innovation:**,
   *Thrust/Aim N (one-line mission):*. Reviewers skim; visible structure earns time.
 - **A concrete running example or protagonist** to make an abstract method vivid and consistent across aims.
-- **Sharp challenge/aim statements posed as questions** -- a crisp open question reads as a well-posed
+- **Sharp challenge/aim statements posed as questions**: a crisp open question reads as a well-posed
   problem (a boxed or set-off question per aim works well).
-- **Anchoring novel work in deep, named classical results** to signal rigor and lineage -- a known
+- **Anchoring novel work in deep, named classical results** to signal rigor and lineage: a known
   inequality, capacity notion, or test that the new method generalizes.
-- **Foreground the team's standing as feasibility evidence** -- prior funded work, preliminary results,
+- **Foreground the team's standing as feasibility evidence**: prior funded work, preliminary results,
   publications, collaborators, and demonstration partners belong *early*, as proof the plan is executable.
   A real track record is evidence, not boasting; place it where it de-risks the aims. *(Use only the PI's
-  own real, supplied record -- never invent funding, results, partners, or letters.)*
+  own real, supplied record; never invent funding, results, partners, or letters.)*
 
 ### 6.5 Claim <-> feasibility (the proposal analog of Layer 4)
-For every aim and promised outcome, check: is the ambition matched by a credible means -- preliminary data,
-a prior method, a classical foundation, a collaborator, or staged de-risking? If yes, keep the ambitious
-verb. If no, attach the missing evidence or scale the claim to what the plan supports. Never invent
-preliminary results, prior funding, partners, or letters; if the support does not exist, flag the gap for
-the author rather than papering over it.
+For every aim and promised outcome, check: is the ambition matched by a credible means, such as
+preliminary data, a prior method, a classical foundation, a collaborator, or staged de-risking? If yes,
+keep the ambitious verb. If no, attach the missing evidence or scale the claim to what the plan supports.
+Never invent preliminary results, prior funding, partners, or letters; if the support does not exist, flag
+the gap for the author rather than papering over it.
 
 ---
 
