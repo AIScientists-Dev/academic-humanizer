@@ -4,9 +4,8 @@
 
 [![license](https://img.shields.io/badge/license-MIT-2f8f57?style=flat-square)](LICENSE)
 &nbsp;![version](https://img.shields.io/badge/version-0.3.2-2f8f57?style=flat-square)
-&nbsp;![Claude Code](https://img.shields.io/badge/Claude_Code-skill-1c1a15?style=flat-square)
-&nbsp;![scope](https://img.shields.io/badge/scope-papers_·_theses_·_NSF_·_NIH-555?style=flat-square)
-&nbsp;![provenance](https://img.shields.io/badge/built_by-NSF,_CAREER,_NIH_R01_funded_researchers-444?style=flat-square)
+&nbsp;![skill](https://img.shields.io/badge/skill-papers_and_grant_proposals-1c1a15?style=flat-square)
+&nbsp;![built by](https://img.shields.io/badge/built_by-NSF,_CAREER,_NIH_R01-555?style=flat-square)
 
 </div>
 
@@ -65,6 +64,9 @@ example, an NIH Specific Aims page, and a funded NSF CAREER summary.
 ```bash
 git clone https://github.com/AIScientists-Dev/academic-humanizer ~/.claude/skills/academic-humanizer
 ```
+
+It is a plain `SKILL.md` plus examples, so it also runs as a skill or system prompt for **Codex** and
+**MorphMind**. Point your agent at `SKILL.md`.
 
 ## Use
 

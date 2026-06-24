@@ -7,7 +7,7 @@ description: |
   conventions, matching claims to evidence (and, for proposals, claims to feasibility), and matching
   the author's voice. Use when writing or editing academic prose or grant proposals.
 license: MIT
-compatibility: claude-code opencode
+compatibility: claude-code codex morphmind opencode
 allowed-tools: [Read, Write, Edit, Grep, Glob, AskUserQuestion]
 ---
 
