@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="Georgia, 'Times New Roman', serif">
+  <rect x="3" y="3" width="1194" height="669" rx="22" fill="#f6f5f0" stroke="#e4e2da" stroke-width="2.5"/>
+  <rect x="3" y="3" width="14" height="669" rx="7" fill="#2f8f57"/>
+
+  <text x="74" y="168" font-size="78" font-weight="700" fill="#1b1a16">Academic Humanizer</text>
+  <text x="76" y="226" font-size="31" fill="#57534b">Remove the AI tells from papers and grant proposals.</text>
+
+  <!-- BEFORE -->
+  <rect x="74" y="310" width="498" height="170" rx="16" fill="#fbeceb" stroke="#f1c7c3" stroke-width="1.5"/>
+  <text x="104" y="360" font-size="18" letter-spacing="3" font-family="ui-monospace,Menlo,monospace" fill="#b23b32">BEFORE</text>
+  <text x="104" y="418" font-size="31" fill="#7a4a45">delve, novel, paves the way</text>
+  <line x1="104" y1="408" x2="500" y2="408" stroke="#cf5b52" stroke-width="3" opacity="0.6"/>
+
+  <text x="592" y="412" font-size="52" text-anchor="middle" fill="#2f8f57">&#8594;</text>
+
+  <!-- AFTER -->
+  <rect x="628" y="310" width="498" height="170" rx="16" fill="#eaf3ee" stroke="#bfe0cd" stroke-width="1.5"/>
+  <text x="658" y="360" font-size="18" letter-spacing="3" font-family="ui-monospace,Menlo,monospace" fill="#2f8f57">AFTER</text>
+  <text x="658" y="418" font-size="31" fill="#2c4a39">precise, evidence-bound prose</text>
+
+  <text x="74" y="600" font-size="23" font-family="ui-monospace,Menlo,monospace" letter-spacing="0.5" fill="#8b867c">Built by NSF &#183; NSF CAREER &#183; NIH R01 researchers     &#183;     MIT</text>
+</svg>

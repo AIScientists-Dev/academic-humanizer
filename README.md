@@ -1,21 +1,29 @@
 <div align="center">
 
-# Academic Humanizer
-
-**Strip the tells of AI writing from papers and grant proposals, without flattening the precise,
-evidence-bound voice that scholarship requires.**
+<img src="assets/banner.svg" alt="Academic Humanizer: strip the tells of AI writing from papers and grant proposals, without flattening the precise, evidence-bound voice scholarship requires" width="860">
 
 [![license](https://img.shields.io/badge/license-MIT-2f8f57?style=flat-square)](LICENSE)
-&nbsp;![version](https://img.shields.io/badge/version-0.3.0-2f8f57?style=flat-square)
+&nbsp;![version](https://img.shields.io/badge/version-0.3.2-2f8f57?style=flat-square)
 &nbsp;![Claude Code](https://img.shields.io/badge/Claude_Code-skill-1c1a15?style=flat-square)
 &nbsp;![scope](https://img.shields.io/badge/scope-papers_·_theses_·_NSF_·_NIH-555?style=flat-square)
 &nbsp;![provenance](https://img.shields.io/badge/built_by-NSF,_CAREER,_NIH_R01_funded_researchers-444?style=flat-square)
 
 </div>
 
-> Built and field-tested by an academic research group whose work is supported by the U.S. National
-> Science Foundation (including an NSF CAREER award) and the National Institutes of Health (R01). It
-> distills the manuscript and grant practice that gets papers accepted and proposals funded.
+## Why we built this
+
+Some of us write a lot of papers and grant proposals, and our team started using AI to help with
+drafts. The catch is that AI writing is easy to spot: the "In recent years..." openers, the puffed-up
+phrasing, the very long sentences, the em-dashes. Reviewers pick up on it.
+
+There are tools called "humanizers" that try to remove that AI flavor, but they're made for blogs and
+marketing. Run one on a paper or an NSF proposal and it also strips out the precision and the careful,
+evidence-bound wording that academic writing needs, so it ends up doing more harm than good.
+
+So we put together our own for the group. To get the rules, we had the AI compare its own drafts with
+our team's accepted papers and funded proposals, and we went through the differences by hand. It's
+nothing fancy, and it isn't about gaming review or adding fake novelty. We just wanted AI-polished
+drafts to still read like a person wrote them, with the numbers, citations, and claims left alone.
 
 ## See it work
 
@@ -28,37 +36,29 @@ evidence-bound voice that scholarship requires.**
 > for a transformative paradigm that will revolutionize the field.
 
 > [!TIP]
-> **After** (academic-humanized; in proposal mode the vision stays, the tells go):
+> **After** (the AI tells are gone; the vision and ambition stay):
 >
-> Existing continual-learning methods, though promising, are largely empirical, with unclear principles
-> underpinning their behavior, which limits their reliability and further progress. This proposal builds
-> a principled framework that unifies adaptation, soft supervision, and cross-domain knowledge through
-> coupled theory and algorithm design, demonstrated on autonomous driving and network management.
+> Continual learning matters, but today's methods stay empirical and their principles are unclear. That
+> limits reliability and progress. This proposal builds a principled framework on three fronts:
+> adaptation, soft supervision, and cross-domain knowledge. We demonstrate it on autonomous driving and
+> network management.
 
 **More before/after passes** are in [`examples/before-after.md`](examples/before-after.md): a general
 example, an NIH Specific Aims page, and a funded NSF CAREER summary.
 
 ---
 
-General "humanizers" are tuned for blogs and encyclopedic text. Academic Humanizer is built for
-manuscripts and proposals:
+## What it does
 
-1. **Strips academic-specific AI tells:** "paves the way", "extensive experiments", "to the best of
-   our knowledge", "In recent years … has attracted increasing attention", Moreover/Furthermore
-   overuse, contribution-list clichés, citation dumping, hedging-by-vagueness, on top of the general
-   AI vocabulary (delve, underscore, tapestry), copula avoidance, rule-of-three, and em-dashes (removed
-   entirely).
-2. **Enforces a claim↔evidence discipline:** every empirical claim must earn a number, figure, or
-   citation, and no verb may be stronger than its evidence (`prove` → `show empirically`); magnitudes
-   become ranges attributed to their method, metric, and baseline.
-3. **Preserves legitimate scholarship:** evidence-tied hedging (`suggests`, `is consistent with`,
-   `we hypothesize`), appropriate passive voice, `we`, definitions, symbols, and **every citation**.
-   It never invents or alters a number, equation, or citation.
-4. **Handles funding proposals as a distinct mode:** NSF (Project Summary with the Overview /
-   Intellectual Merit / Broader Impacts heads; vision → goal → gap → thrusts → payoff) and NIH (the
-   one-page Specific Aims arc). A proposal is sold on **vision plus feasibility**, so it *keeps* the
-   ambition language a paper would trim and instead enforces **claim ↔ feasibility**, with the heaviest
-   editing on the first pages, the part every reviewer reads and scores.
+- **Removes the usual AI tells:** "paves the way", "extensive experiments", "to the best of our
+  knowledge", "In recent years...", delve/underscore/tapestry, rule-of-three, very long sentences, and
+  em-dashes.
+- **Keeps claims tied to evidence:** no verb stronger than the data (`prove` → `show empirically`), and
+  vague magnitudes become attributed ranges.
+- **Leaves real scholarship alone:** evidence-tied hedging, passive voice where it fits, `we`,
+  definitions, symbols, and every citation. It doesn't change a number or a reference.
+- **Has a separate mode for grant proposals (NSF, NIH):** it keeps the vision a paper would trim, and
+  spends most of the effort on the first pages, since that's what reviewers score.
 
 ## Install
 

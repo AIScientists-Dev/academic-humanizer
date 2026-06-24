@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1440" font-family="'PingFang SC','Hiragino Sans GB','Heiti SC','Microsoft YaHei',sans-serif">
+  <rect x="12" y="12" width="1056" height="1416" rx="32" fill="#f6f5f0" stroke="#e4e2da" stroke-width="3"/>
+  <rect x="12" y="12" width="18" height="1416" rx="9" fill="#2f8f57"/>
+
+  <text x="80" y="240" font-size="104" font-weight="700" fill="#1b1a16">论文与基金</text>
+  <text x="80" y="372" font-size="104" font-weight="700" fill="#1b1a16">去掉 <tspan fill="#2f8f57">AI 味</tspan></text>
+  <text x="84" y="452" font-size="40" fill="#57534b">Academic Humanizer · 开源 skill 工具</text>
+
+  <!-- 改前 -->
+  <rect x="80" y="560" width="920" height="250" rx="24" fill="#fbeceb" stroke="#f1c7c3" stroke-width="2"/>
+  <text x="118" y="632" font-size="32" letter-spacing="6" fill="#b23b32">改前</text>
+  <text x="118" y="714" font-size="50" font-family="Georgia,serif" fill="#7a4a45">delve, novel, paves the way</text>
+  <line x1="118" y1="696" x2="822" y2="696" stroke="#cf5b52" stroke-width="4" opacity="0.6"/>
+
+  <text x="540" y="905" font-size="92" text-anchor="middle" fill="#2f8f57">&#8595;</text>
+
+  <!-- 改后 -->
+  <rect x="80" y="950" width="920" height="250" rx="24" fill="#eaf3ee" stroke="#bfe0cd" stroke-width="2"/>
+  <text x="118" y="1022" font-size="32" letter-spacing="6" fill="#2f8f57">改后</text>
+  <text x="118" y="1108" font-size="64" fill="#2c4a39">精确、用事实说话</text>
+
+  <text x="540" y="1384" font-size="32" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" fill="#8b867c">github.com/AIScientists-Dev/academic-humanizer</text>
+</svg>

@@ -1,6 +1,6 @@
 ---
 name: academic-humanizer
-version: 0.3.1
+version: 0.3.2
 description: |
   Remove AI-generated writing patterns from academic manuscripts (papers, theses, rebuttals) and
   funding proposals (NSF Project Summary/Description, NIH Specific Aims) while preserving scholarly
@@ -53,8 +53,8 @@ vague attributions ("experts argue" with no cite); AI vocabulary (*delve, unders
 tapestry, testament, landscape (abstract), pivotal, showcase, foster, leverage (filler), realm,
 seamless*); copula avoidance ("serves as" -> "is"); negative parallelisms ("not just X, but Y");
 rule-of-three padding; elegant variation (cycling synonyms for one referent); filler
-("it is worth noting that", "in order to"); and **em-dashes (remove entirely; recast with commas,
-colons, parentheses, or separate sentences)**.
+("it is worth noting that", "in order to"); **overlong, clause-stacked sentences (split them; see 2.11)**;
+and **em-dashes (remove entirely; recast with commas, colons, parentheses, or separate sentences)**.
 
 **Before:** *Additionally, an enduring testament to the method's value is its ability to delve into
 intricate dependencies, showcasing a seamless integration that underscores its pivotal role.*
@@ -125,6 +125,15 @@ condition on feature-type metadata.*
 If it matters, the sentence shows it.
 **Before:** *It is worth noting that, importantly, the gain holds across scenarios.*
 **After:** *The gain holds across all three scenarios (Table 4).*
+
+### 2.11 Overlong, clause-stacked sentences
+AI favors long sentences that chain three or four clauses with commas and "which", "that", "while", "with".
+Split them: one idea per sentence, and cut subordinate clauses that carry no weight. **Watch:** sentences
+past ~30 words, or with 3+ subordinate clauses.
+**Before:** *Existing methods, though promising, are largely empirical, with unclear principles
+underpinning their behavior, which limits their reliability and further progress.*
+**After:** *Existing methods stay empirical. Their principles are unclear, which limits reliability and
+progress.*
 
 ---
 
