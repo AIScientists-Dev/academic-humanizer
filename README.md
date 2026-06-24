@@ -16,8 +16,8 @@ drafts. The catch is that AI writing is easy to spot: the "In recent years..." o
 phrasing, the very long sentences, the em-dashes. Reviewers pick up on it.
 
 There are tools called "humanizers" that try to remove that AI flavor, but they're made for blogs and
-marketing. Run one on a paper or an NSF proposal and it also strips out the precision and the careful,
-evidence-bound wording that academic writing needs, so it ends up doing more harm than good.
+marketing. Run one on a paper or an NSF proposal and it cuts the precision along with the AI flavor. The
+careful wording academic writing depends on is the first thing to go.
 
 So we put together our own for the group. To get the rules, we had the AI compare its own drafts with
 our team's accepted papers and funded proposals, and we went through the differences by hand. It's
