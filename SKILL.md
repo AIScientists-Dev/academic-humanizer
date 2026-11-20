@@ -37,13 +37,15 @@ verb is stronger than its evidence.**
 1. **Read** the manuscript and any author writing sample; note the document type (paper vs. funding
    proposal) and the target venue or funding agency. For proposals, also apply Layer 6 and preserve
    appropriate vision.
-2. **Audit** (do not edit yet): list each detected pattern with its location and proposed fix, and each
-   empirical claim's evidence status.
+2. **Audit** (do not edit yet): list each detected pattern with its location and proposed fix. For each
+   claim, record its type (measured finding, hypothesis, or goal/plan; see Layer 4), its evidence status,
+   and the purpose, causal, and conditional links it makes ("to", "so that", "because", "if", "only when").
 3. **Rewrite**: same structure and content, all claims and citations preserved, tells removed, over-claims
-   matched to evidence, legitimate hedging kept.
-4. **Report**: cleaned text plus a short change log (patterns removed, claims softened or given evidence
-   pointers, voice notes). Cover everything the original covered: if it had five paragraphs, so does the
-   rewrite.
+   matched to evidence, legitimate hedging kept, and every claim's type and logical links intact.
+4. **Report**: cleaned text plus a short change log in two parts: **style edits** (patterns removed,
+   sentences split, voice notes) and **claim changes** (each claim softened, strengthened, narrowed, or
+   given an evidence pointer, quoted before and after). Cover everything the original covered: if it had
+   five paragraphs, so does the rewrite.
 
 ---
 
@@ -146,6 +148,9 @@ A general humanizer flattens legitimate scholarly constructs. Keep them.
   hypothesize that", "may indicate", "appears to" when the claim is genuinely uncertain.
   *Wrong fix:* turning *"the results suggest X"* into *"the results prove X"*: this manufactures
   over-claiming. Keep the calibrated verb.
+- **Stated purposes and logical links.** Keep what a sentence says an action is *for* ("to reduce
+  errors", "so that reviewers can check"), and keep its causal and conditional links ("because", "if",
+  "only when"). Removing an over-claim must not remove the goal or the condition it was attached to.
 - **Passive voice** is fine when the actor is irrelevant: *"Samples were normalized to total protein."*
 - **First-person plural "we"** is standard; do not rewrite to avoid it.
 - **Semicolons and an occasional triple** are fine in moderation. Em-dashes are the exception: remove
@@ -156,9 +161,21 @@ A general humanizer flattens legitimate scholarly constructs. Keep them.
 ---
 
 ## Layer 4: Claim-evidence discipline
-For every empirical claim, check (a) is it backed by a number, figure, table, or citation in the text,
-and (b) does the verb match the strength of that evidence?
+For every empirical claim, first decide what kind of claim it is, then check (a) is it backed by a number,
+figure, table, or citation in the text, and (b) does the verb match the strength of that evidence?
 
+- **Goal, hypothesis, or finding? Decide before softening.** A *measured finding* ("the review step cut
+  errors by 12%") needs evidence. A *hypothesis* ("we expect the review step to cut errors") stays a
+  hypothesis; just make sure it is not worded as already shown. A *goal or plan* ("we route uncertain
+  cases to human review to cut errors") claims no result, so it needs no evidence: trim the inflation
+  attached to it ("significantly", "in all scenarios"), but keep the goal.
+  *Before:* *Notably, this innovative scheme is of great significance: we plan to send low-confidence
+  samples to human review, significantly reducing classification errors in all scenarios. The actual
+  reduction has not been measured.*
+  *Wrong fix:* *We plan to send low-confidence samples to human review. Whether this reduces errors has
+  not been measured.* (The uncertainty survives, but the goal is gone.)
+  *After:* *We plan to send low-confidence samples to human review, with the goal of reducing
+  classification errors. The actual reduction has not been measured.*
 - **Unbacked claim -> add the evidence pointer or soften.**
   *Before:* *Our method is more robust.*  *After:* *Our method's accuracy drops by 2 points under
   distribution shift, versus 11 points for the baseline (Figure 3).*
@@ -257,5 +274,8 @@ the gap for the author rather than papering over it.
 ---
 
 ## Output
-Return the cleaned text plus a short change report: patterns removed (by type), claims softened or given
-evidence pointers, and any voice/venue notes. Confirm that no number, equation, or citation was altered.
+Return the cleaned text plus a short change report in two parts. **Style edits:** patterns removed (by
+type) and any voice/venue notes. **Claim changes:** every claim whose strength, scope, or evidence pointer
+changed, quoted before and after, so the author can review them apart from the wording. Confirm that no
+number, equation, or citation was altered, and that every stated goal, hypothesis, and purpose, causal, or
+conditional link is still there.

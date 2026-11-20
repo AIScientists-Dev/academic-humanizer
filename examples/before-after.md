@@ -90,3 +90,39 @@ concrete gap (methods are empirical, principles unclear) and its cost (reliabili
 **preserved** is exactly what a paper layer would over-trim but a proposal needs: the long-term vision,
 the three-layer framework, the named demonstration domains, and the integrated education plan. In
 proposal mode, ambition stays; it is just made specific and credible.
+
+---
+
+## Softening a claim without losing its goal (regression example)
+
+From [issue #5](https://github.com/AIScientists-Dev/academic-humanizer/issues/5): a synthetic Chinese
+example where an earlier run removed the over-claim but also dropped the goal it was attached to. An
+English gloss follows each version.
+
+**Before (boilerplate emphasis + unsupported "significantly … in all scenarios"):**
+> 值得注意的是，这一创新方案具有重要意义：我们计划将低置信度的垃圾分类样本交给人工复核，从而显著降低所有场景的自动分类错误。实际降错效果尚未测量，误差可能来自类别混淆，也可能来自图像质量。
+>
+> *Notably, this innovative scheme is of great significance: we plan to send low-confidence
+> waste-classification samples to human review, thereby significantly reducing automatic classification
+> errors in all scenarios. The actual reduction has not been measured; errors may come from class
+> confusion or from image quality.*
+
+**Wrong fix (claim softened, goal lost):**
+> 我们计划将低置信度的垃圾分类样本交给人工复核。这样是否降低自动分类错误尚未测量。误差可能来自类别混淆，也可能来自图像质量。
+>
+> *We plan to send low-confidence waste-classification samples to human review. Whether this reduces
+> automatic classification errors has not been measured. Errors may come from class confusion or from
+> image quality.*
+
+**After (claim softened, goal kept):**
+> 我们计划将低置信度的垃圾分类样本交给人工复核，目标是减少自动分类错误。实际降错效果尚未测量，误差可能来自类别混淆，也可能来自图像质量。
+>
+> *We plan to send low-confidence waste-classification samples to human review, with the goal of
+> reducing automatic classification errors. The actual reduction has not been measured; errors may come
+> from class confusion or from image quality.*
+
+What changed: cut the boilerplate emphasis ("值得注意的是", "具有重要意义") and the unsupported
+"显著 … 所有场景" (significantly, in all scenarios). The sentence is a **plan with a goal**, not a
+measured finding, so the goal stays and only its inflation goes (Layer 4). The original's own caveats
+(not yet measured; two possible sources of error) are kept as written. In the change report, dropping
+"显著 … 所有场景" goes under **claim changes**; the emphasis cuts go under **style edits**.
