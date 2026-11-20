@@ -3,7 +3,7 @@
 <img src="assets/banner.svg" alt="Academic Humanizer: personalized editing for AI-assisted academic drafts, keeping your voice and every claim, number, and citation intact" width="860">
 
 [![license](https://img.shields.io/badge/license-MIT-2f8f57?style=flat-square)](LICENSE)
-&nbsp;![version](https://img.shields.io/badge/version-0.3.2-2f8f57?style=flat-square)
+&nbsp;![version](https://img.shields.io/badge/version-0.3.3-2f8f57?style=flat-square)
 &nbsp;![skill](https://img.shields.io/badge/skill-papers_and_grant_proposals-1c1a15?style=flat-square)
 &nbsp;![built by](https://img.shields.io/badge/built_by-NSF,_CAREER,_NIH_R01-555?style=flat-square)
 
@@ -71,6 +71,23 @@ example, an NIH Specific Aims page, and a funded NSF CAREER summary.
 ```bash
 git clone https://github.com/AIScientists-Dev/academic-humanizer ~/.claude/skills/academic-humanizer
 ```
+
+On Windows, use PowerShell:
+
+```powershell
+git clone https://github.com/AIScientists-Dev/academic-humanizer "$HOME\.claude\skills\academic-humanizer"
+```
+
+or Command Prompt:
+
+```bat
+git clone https://github.com/AIScientists-Dev/academic-humanizer "%USERPROFILE%\.claude\skills\academic-humanizer"
+```
+
+If you downloaded the ZIP instead, unzip it, rename the folder from `academic-humanizer-main` to
+`academic-humanizer`, and move it into `%USERPROFILE%\.claude\skills\` (create the folder if it does not
+exist). `SKILL.md` must end up directly inside it, at
+`%USERPROFILE%\.claude\skills\academic-humanizer\SKILL.md`. Then start a new Claude Code session.
 
 It is a plain `SKILL.md` plus examples, so it also runs as a skill or system prompt for **Codex** and
 **MorphMind**. Point your agent at `SKILL.md`.
